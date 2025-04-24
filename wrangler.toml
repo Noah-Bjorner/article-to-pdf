@@ -1,0 +1,17 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "article-to-pdf"
+main = "src/index.ts"
+compatibility_date = "2025-01-29"
+compatibility_flags = ["nodejs_compat"]
+
+[observability]
+enabled = true
+head_sampling_rate = 1
+
+[observability.logs]
+invocation_logs = false
+
+[browser]
+binding = "PDF_BROWSER"
+
+

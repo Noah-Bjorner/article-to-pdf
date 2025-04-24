@@ -18,6 +18,8 @@
   },
   "dependencies": {
     "@cloudflare/puppeteer": "^1.0.2",
-    "hono": "^4.6.20"
+    "@mozilla/readability": "^0.6.0",
+    "hono": "^4.6.20",
+    "linkedom": "^0.18.9"
   }
 }

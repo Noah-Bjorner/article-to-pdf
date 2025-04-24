@@ -55,11 +55,19 @@
         gap: 20px;
       }
       .footer {
-        margin-top: 60px;
+        margin-top: 40px;
         text-align: center;
         font-size: 15px;
         color: rgba(0, 0, 0, 0.65);
         width: 100%;
+        display: flex;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding-top: 20px;
+        justify-content: space-between;
+        text-transform: lowercase;
+      }
+      .footer-emphasized {
+        color: rgb(0, 0, 0);
       }
       #byline {
         font-size: 20px;
@@ -67,6 +75,7 @@
         color: rgba(0, 0, 0, 0.65);
         text-align: center;
         font-weight: normal;
+        line-height: 1.2;
       }
       #description {
         font-size: 20px;
@@ -92,15 +101,14 @@
         width: 100%;
         height: auto;
         max-height: 500px;
-        border-radius: 5px;
         object-fit: contain;
       }
       figcaption {
-        font-size: 14px;
+        font-size: 15px;
         font-style: italic;
         color: rgba(0, 0, 0, 0.65);
         text-align: center;
-        margin-top: 2px;
+        margin-top: 4px;
       }
       em {
         font-style: italic;
@@ -115,7 +123,6 @@
         background-color: yellow;
         color: black;
         padding: 2px 5px;
-        border-radius: 5px;
       }
       ul, ol {
         margin: 0px;
@@ -141,7 +148,6 @@
         width: 100%;
         background-color: rgba(0, 0, 0, 0.05);
         padding: 20px;
-        border-radius: 5px;
         overflow-x: auto;
         margin: 0px;
         box-sizing: border-box;
@@ -177,7 +183,6 @@
         border-collapse: collapse; /* Collapse borders */
         margin: 0px;
         font-size: 20px;
-        border-radius: 0px;
         overflow: hidden;
       }
       th, td {
@@ -185,7 +190,6 @@
         border: 1px solid rgba(0, 0, 0, 0.1);
         font-weight: normal;
         text-align: left;
-        border-radius: 0px;
       }
       th {
         background-color: rgba(0, 0, 0, 0.05);
@@ -294,7 +298,8 @@ fetchAndProcessUsers('https://jsonplaceholder.typicode.com/users'); // Placehold
         <p>This is a end of article paragraph.</p>
     </div>
     <div class="footer">
-        <span>Made with Article to PDF</span>
+        <span>Made with <span class="footer-emphasized">Article-to-PDF</span></span>
+        <span>From <span class="footer-emphasized">noahbjorner.com</span></span>
     </div>
   </body>
 </html>

@@ -14,4 +14,12 @@ invocation_logs = false
 [browser]
 binding = "PDF_BROWSER"
 
+[durable_objects]
+bindings = [
+  { name = "BROWSER_DO", class_name = "BrowserSession" }
+]
+
+[[migrations]]
+tag = "v1-init-do" # Give it a unique tag
+new_classes = ["BrowserSession"] # List the NEW Durable Object classes being introduced
 
